@@ -24,7 +24,7 @@ class Solution:
         # return dummy.next
 
 
-        # 재귀방식 [124][134]
+        # 재귀방식 [124][134] 113
         if list1 is None or list2 is None:  #base case 재귀 탈출용
             return list1 or list2
         if list1.val < list2.val: #1번 리스트가 더 작을때 1번 리스트에 다음번째에 재귀를 호출
@@ -50,4 +50,5 @@ l1.next.next = ListNode(4)
 print(l1)
 print(list2)
 print("------------")
+
 
