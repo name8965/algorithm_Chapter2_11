@@ -1,6 +1,9 @@
 from typing import List
 
 class Solution:
+
+    #[73,74,75,71,69,72,76,73]
+    #[0,]
     def dailyTemperatures(self, temp: List[int]) -> List[int]:
         if not temp:
             return temp     #악질 예제 예외처리

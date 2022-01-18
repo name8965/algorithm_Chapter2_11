@@ -28,7 +28,6 @@ class Solution:
 
 
 
-
 s = Solution()
 print(s.removeDuplicateLetters("cbacdcbc"))
 print(s.removeDuplicateLetters(""))
