@@ -22,12 +22,19 @@ def is_valid(s):
 
 import sys
 
+# n, m = list(map(int, input().split()))
+T,Y= sys.stdin.readline().split()  # 입력받을 숫자
 
-T = int(sys.stdin.readline())   # 입력받을 숫자
-
+print(T)
 for i in range(T):
-    VPS = sys.stdin.readline().rstrip()
-    print(is_valid(VPS))
+    email,pawd= sys.stdin.readline().split()
+    pawd = pawd.rstrip('\n')
+
+for _ in range(int(Y)):
+    email2 = sys.stdin.readline().rstrip()
+# for i in range(T):
+#     VPS = sys.stdin.readline().rstrip()
+#     print(is_valid(VPS))
 
 # print(is_valid("(())())"))
 # print(is_valid("(((()())()"))

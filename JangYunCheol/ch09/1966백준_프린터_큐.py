@@ -36,6 +36,8 @@ def print_que(n,m,imp):
 
 
 
+
+
 print(print_que(4,2,[1,2,3,4]))
 print(print_que(6,0,[1,1,9,1,1,1]))
 print(print_que(6,0,[1,1,9,1,1,1]))
