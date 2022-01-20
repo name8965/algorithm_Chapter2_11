@@ -4,49 +4,37 @@ import collections
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
 
+        max_len = 0
+        map = ''
 
-        list_s= "".join(s)
+        for l in s:
+            if l in map:
+                map = map[map.find(l) + 1:]     #중복문자일 경우 해당 동일한 문자를 찾아서 그다음 번째부터 사용
+            map += l                            #문자열에 해당 문자 추가
+            if len(map) > max_len:              #최대길이가 현재 문자길이보다 크면 대입
+                max_len = len(map)
 
-        res = set()
-        map = {}
-        maxcount=0
-        # if 'a' not in s[0:4]:
-        #     print(s[0:4])
-        for char in range(len(s)):
-
-            e= s[char]
-            for point in range(0,char):
-                if s[point:char] in res :
-                    continue
-                if s[char] in list(s[point:char]) or char-point ==0:
-                    continue
-                # for s[char] in res:
-                res.add(s[point:char])
-                map[s[point:char]] = char - point
-                if s[char] in map:
-                    # res.remove(str(map[max(map.keys())].key()))
-                    del map[max(map.keys())]
+        return max_len
 
 
-        # return max(map.values())
-        return map
+        # return map
 
         # return s
 
-        map = {}
-        max_length = start = 0
-        for index, char in enumerate(s):
-            if char in map and start<=map[char]:
-                start = map[char] +1
-            else:
-                max_length = max(max_length,index - start +1)
+        # map = {}
+        # max_length = start = 0
+        # for index, char in enumerate(s):
+        #     if char in map and start<=map[char]:
+        #         start = map[char] +1
+        #     else:
+        #         max_length = max(max_length,index - start +1)
+        #
+        #     map[char] = index
+        #
+        # return max_length
 
-            map[char] = index
 
-        return max_length
-
-
-
+# "pwwkew"
 
 s = Solution()
-print(s.lengthOfLongestSubstring("abcabcbb"))
+print(s.lengthOfLongestSubstring("abcbaccbacab"))
