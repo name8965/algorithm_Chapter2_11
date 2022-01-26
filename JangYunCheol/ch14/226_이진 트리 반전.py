@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-from makeTree import TreeNode,make_tree_by
+from makeTree import TreeNode,make_list_by_Tree
 from typing import Optional
 
 
@@ -32,5 +32,5 @@ makelist = [2,1,3]
 makelist2 = [4,2,7,1,3,6,9]
 makelist3 = []
 
-print(s.invertTree(make_tree_by(makelist,0)))
-print(make_tree_by(makelist,0))
+print(s.invertTree(make_list_by_Tree(makelist,0)))
+print(make_list_by_Tree(makelist,0))
