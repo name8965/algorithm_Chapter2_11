@@ -18,7 +18,6 @@ class Solution:
         return str(int(''.join(str(_) for _ in nums)))
 
 
-
 s = Solution()
 print(s.largestNumber([10,2]))
 print(s.largestNumber([3,30,34,5,9]))
