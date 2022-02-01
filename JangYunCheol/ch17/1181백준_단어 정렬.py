@@ -82,16 +82,16 @@ lstlen = []
 #
 # ['but', 'i', 'wont', 'hesitate', 'no', 'more', 'no', 'more', 'it', 'cannot', 'wait', 'im', 'yours']
 
-import sys
-tc =int(sys.stdin.readline())
-
-for _ in range(tc):
-    n = sys.stdin.readline().rstrip()
-    lst.append(n)
-
-result = mysort(lst,lstlen)
-for i in result:
-    print(''.join(i))
+# import sys
+# tc =int(sys.stdin.readline())
+#
+# for _ in range(tc):
+#     n = sys.stdin.readline().rstrip()
+#     lst.append(n)
+#
+# result = mysort(lst,lstlen)
+# for i in result:
+#     print(''.join(i))
 
 """    
 13
@@ -110,14 +110,14 @@ im
 yours
 """
 
-# import sys
-# tc =int(sys.stdin.readline())
-#
-# for _ in range(tc):
-#     n = sys.stdin.readline().rstrip()
-#     lst.append(n)
-# slst = list(set(lst))
-# slst.sort()
-# slst.sort(key=len)
-# for i in slst:
-#     print(i)
+import sys
+tc =int(sys.stdin.readline())
+
+for _ in range(tc):
+    n = sys.stdin.readline().rstrip()
+    lst.append(n)
+slst = list(set(lst))
+slst.sort()
+slst.sort(key=len)
+for i in slst:
+    print(i)

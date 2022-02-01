@@ -33,7 +33,6 @@ class Solution:
 
 
 
-
 s = Solution()
 print(s.merge([[1,4],[0,4]]))
 print(s.merge([[1,4],[5,6]]))
