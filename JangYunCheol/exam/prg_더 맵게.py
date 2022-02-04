@@ -30,11 +30,12 @@ def solution(scoville, K):
     #     return -1
     # def run(lst,k):
     #     count =0
-    #     heapq.heapify(lst)
+    #  deque= sorted(lst)
+    # a= deq
     #
     #     if lst[0]>k or len(lst)<2:
     #         return 0
-    #     arr1 = heapq.heappop(lst)
+    #     arr1 = deque.popleft(lst)
     #     arr2 = heapq.heappop(lst)
     #     asum=arr1+(arr2*2)
     #     heapq.heappush(lst,asum)

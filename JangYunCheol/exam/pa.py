@@ -19,3 +19,5 @@ def fac2(num):
 
 fac(1)
 # print(fac2(5))
+
+
